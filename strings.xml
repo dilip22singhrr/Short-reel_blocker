@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reels &amp; Shorts Blocker</string>
+    <string name="accessibility_service_description">Yeh service Instagram Reels aur YouTube Shorts ko detect karke block karne ke liye use hoti hai. Yeh koi bhi data collect ya bahar nahi bhejti.</string>
+</resources>

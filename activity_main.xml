@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bg_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/app_name"
+            android:textColor="@color/text_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Big ON/OFF status card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/red_off"
+                android:layout_marginBottom="12dp" />
+
+            <Switch
+                android:id="@+id/switchMaster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.8"
+                android:scaleY="1.8" />
+
+        </LinearLayout>
+
+        <!-- Mode selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Blocking Mode Chuniye:"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/radioFullBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Instagram aur YouTube pura band karo (Recommended - sabse reliable)" />
+
+            <RadioButton
+                android:id="@+id/radioReelsOnly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sirf Reels/Shorts section rokne ki koshish karo (Best-effort, kabhi-kabhi kaam nahi kar sakta)" />
+
+        </RadioGroup>
+
+        <!-- Accessibility permission -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Step 1: Accessibility Permission On Karein"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAccessibilityStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Status: Checking..."
+            android:textColor="@color/text_dark" />
+
+        <Button
+            android:id="@+id/btnAccessibilitySettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Accessibility Settings Kholein" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Note:"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_dark"
+            android:text="Android security ke karan sirf Reels/Shorts ko 100% reliably block karna possible nahi hai, kyunki Instagram/YouTube apne app ke andar ka structure regularly badalte rehte hain. Full Block mode sabse bharosemand tarika hai." />
+
+    </LinearLayout>
+
+</ScrollView>
